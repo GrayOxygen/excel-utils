@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<excelImport>
+	<!-- 数据映射 -->
+	<vertical>
+		<![CDATA[
+			C2 = gameScene[1,4];
+			D2 = priseName[1,6];
+			E2 = winProbability[1,6];
+			F2 = stock[1,6];
+			G2 = acceptance[1,6];
+			H2 = createTime[1,4];
+		]]>
+
+	</vertical>
+
+	<!-- 全局中只能有一个自定义结束符customEndFlag，使用USER_DEFINED_END时必须指定customEndFlag。另外数据映射中的数字区间，会被endStrategy覆盖 -->
+	<endStrategy customEndFlag="Read_Stop">	
+		
+		<verticalEnd>
+					<![CDATA[
+						H2 = USER_DEFINED_END;
+						C2 = USER_DEFINED_END;
+					]]>
+		</verticalEnd>
+		
+	</endStrategy>
+
+</excelImport>

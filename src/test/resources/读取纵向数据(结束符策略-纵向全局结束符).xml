@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<excelImport>
+
+	<vertical>
+		<![CDATA[
+			C2 = gameScene[1,6];
+			D2 = priseName[1,6];
+			E2 = winProbability[1,6];
+			F2 = stock[1,6];
+			G2 = acceptance[1,6];
+			H2 = createTime[1,4];
+		]]>
+
+	</vertical>
+	<!-- 所有单元格应用策略：遇到空格就停止读取，也是纵向读取的默认规则，该默认规则无法被其他规则覆盖 -->
+	<endStrategy customEndFlag="Read_Stop">
+		<verticalEnd end="EMPTY_CELL_END">
+					<![CDATA[
+						H2 = USER_DEFINED_END
+					]]>
+		</verticalEnd>
+	</endStrategy>
+
+</excelImport>

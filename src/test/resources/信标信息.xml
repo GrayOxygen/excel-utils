@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<excelImport>
+
+	<vertical>
+		<![CDATA[
+		   A1 = uuid[1,-1];
+           B1 = major[1,-1];
+           C1 = minor[1,-1];
+           D1 = sendTagName[1,-1];
+           E1 = mac[1,-1];
+		]]>
+
+	</vertical>
+	
+	<validators>
+	
+		<!-- 需要校验的单元格 -->
+		<cellValidators>
+
+			<cellValidator cellName="A1" required="true" />
+			<cellValidator cellName="B1" required="true" />
+			<cellValidator cellName="C1" required="true" />
+			<cellValidator cellName="E1" required="true" />
+			
+		</cellValidators>
+
+	</validators>
+	
+</excelImport>

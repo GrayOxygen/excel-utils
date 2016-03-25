@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<excelImport>
+
+	<vertical>
+		<![CDATA[
+			C2 = gameScene[1,6];
+			D2 = priseName[1,6];
+			E2 = winProbability[1,6];
+			F2 = stock[1,6];
+			G2 = acceptance[1,6];
+			H2 = createTime[1,4];
+		]]>
+
+	</vertical>
+	
+	<!-- wholeEnd为全局结束符策略，会覆盖下级所有节点的结束符配置,verticalEnd horizontalEnd的end也会覆盖下级单元格的策略配置 -->
+	<!-- 这里最终都应用的是全局策略，即自定义customEndFlag的值作为结束符，自定义策略时必须声明customEndFlag -->
+	<endStrategy wholeEnd="USER_DEFINED_END" customEndFlag="Read_Stop">
+		<verticalEnd end="EMPTY_CELL_END"></verticalEnd>
+	</endStrategy>
+
+</excelImport>

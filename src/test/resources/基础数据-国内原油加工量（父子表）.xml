@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<excelImport>
+	<horizontal>
+
+       <![CDATA[
+           B2 = orgName[1,1];
+       ]]>
+
+    </horizontal>
+<!--父子表的时候，子属性格式为子属性名称.子属性实例的属性名称 -->
+	<vertical>
+		<![CDATA[
+			C4 = oilDataList.date[1,3];
+			D4 = oilDataList.oil1[1,3];
+			E4 = oilDataList.oil2[1,3];
+			F4 = oilDataList.oil3[1,3];			
+		]]>
+
+	</vertical>
+	<!--没有配置结束读取策略，按默认的读取到空行时停止读取-->
+	<validators>
+		 
+		<!-- 需要校验的单元格 -->
+		<cellValidators>
+		
+			<cellValidator cellName="B2" required="true"  maxLength="10" />
+			
+			<cellValidator cellName="C4" dateFormat="yyyy年MM月" />
+			<cellValidator cellName="D4" number="true" />
+			<cellValidator cellName="E4" number="true" />
+			<cellValidator cellName="F4" number="true" />
+			
+		</cellValidators>
+	
+	</validators>
+
+	
+	
+	
+</excelImport>

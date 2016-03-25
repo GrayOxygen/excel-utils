@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<excelImport>
+
+	<vertical>
+		<![CDATA[
+			C2 = gameScene[1,2];
+			D2 = priseName[2,3];
+			E2 = winProbability[3,5];
+			F2 = stock[1,2];
+			G2 = acceptance[1,2];
+			H2 = createTime[1,2];
+		]]>
+
+	</vertical>
+
+	<validators>
+		<!-- 需要校验的单元格 -->
+		<cellValidators>
+
+			<cellValidator cellName="C2" required="true" />
+			<cellValidator cellName="D2" required="true" />
+			<cellValidator cellName="E2" required="true" max="0.1"/>
+			<cellValidator cellName="F2" required="true" />
+			<cellValidator cellName="G2" required="true" />
+			<cellValidator cellName="H2" required="true" />
+		</cellValidators>
+
+	</validators>
+
+</excelImport>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<excelImport>
+	<!--横向数据映射-->
+	<horizontal>
+       <![CDATA[
+           B3 = applyName[1,1];
+           B4 = applyCode[1,1];
+           B5 = applyMoney[1];
+           B6 = applyReason[1];
+           B7 = email[1];
+       ]]>
+    </horizontal>
+	
+	<!--校验器配置-->
+	<validators>
+		<loadCustomValidator name="moneyValidator" classPath="com.saysth.excel.validtor.MoneyValidator"></loadCustomValidator>
+		
+		<!-- 需要校验的单元格 -->
+		<cellValidators>
+			<cellValidator cellName="B3" required="true" minLength="1" maxLength="15" />
+			<cellValidator cellName="B4" required="true" minLength="1" maxLength="20" />
+			<cellValidator cellName="B5" required="true" min="1" max="5000000"  customValidator="moneyValidator"/>
+			<cellValidator cellName="B6" required="true" minLength="1" maxLength="30" />
+			<cellValidator cellName="B7" email="true" /> 
+		</cellValidators>
+	</validators>
+
+</excelImport>
