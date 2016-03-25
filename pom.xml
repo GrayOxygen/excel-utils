@@ -1,16 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+	
 	<modelVersion>4.0.0</modelVersion>
-	<parent>
-		<groupId>com.saysth.galaxy</groupId>
-		<artifactId>galaxy-parent</artifactId>
-		<version>1.0.3</version>
-	</parent>
-	<artifactId>galaxy-excel-utils</artifactId>
+	<artifactId>galaxy-excel</artifactId>
 	<version>1.0.0</version>
 	<packaging>jar</packaging>
-	<name>galaxy-excel-utils</name>
+	<name>galaxy-excel</name>
 	<url>http://maven.apache.org</url>
 
 	<properties>
@@ -50,36 +46,12 @@
 		<dependency>
 			<groupId>commons-beanutils</groupId>
 			<artifactId>commons-beanutils</artifactId>
+			<version>1.9.2</version>
 		</dependency>
 
 	</dependencies>
 	<build>
 		<plugins>
-			<!-- Eclipse plugin -->
-			<plugin>
-				<groupId>org.apache.maven.plugins</groupId>
-				<artifactId>maven-eclipse-plugin</artifactId>
-				<configuration>
-					<wtpversion>none</wtpversion>
-				</configuration>
-			</plugin>
-			<!-- Source attach plugin
-			<plugin>
-				<groupId>org.apache.maven.plugins</groupId>
-				<artifactId>maven-javadoc-plugin</artifactId>
-				<executions>
-					<execution>
-						<configuration>
-							<quiet>true</quiet>
-						</configuration>
-						<id>attach-javadocs</id>
-						<goals>
-							<goal>jar</goal>
-						</goals>
-					</execution>
-				</executions>
-			</plugin>
-			 -->
 		</plugins>
 	</build>
 </project>
