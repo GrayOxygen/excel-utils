@@ -5,7 +5,7 @@ The API is based on open-source the Java API for Microsoft Documents  - Apache P
 
 
 
-
+\n\r
 If you find some bugs or you have some advise,below is my contact details :
 Author:王辉阳
 E-Mail:490750127@qq.com
