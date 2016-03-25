@@ -9,11 +9,9 @@ The API is based on open-source the Java API for Microsoft Documents  - Apache P
 
 2，对读取到的数据进行校验，提供默认的校验规则以及自定义的校验规则
 
-3，将读取到的excel数据转换为实体数据集
+3，将读取到的excel数据转换为无父子关系的POJO数据集
 
 4，支持一层父子关系的数据转换，即excel中数据关系为父子与若干子表的关系时，可以转换为指定的数据集
-
-5，父子关系的实体转换，目前只支持一层父子关系的实体转换，即一个父表对应一个或多个子表的转换
 
 
 TODO documents 
