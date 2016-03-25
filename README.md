@@ -7,7 +7,7 @@ The API is based on open-source the Java API for Microsoft Documents  - Apache P
 
 1，指定excel文件中需要读取的内容
 
-2，对读取到的数据进行校验，提供默认的校验规则以及自定义的校验规则
+2，对读取到的数据进行校验，提供默认的校验规则，支持自定义校验规则扩展
 
 3，将读取到的excel数据转换为无父子关系的POJO数据集
 
