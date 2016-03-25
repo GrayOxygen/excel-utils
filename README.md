@@ -4,6 +4,7 @@
 The API is based on open-source the Java API for Microsoft Documents  - Apache POI , you can use the API to read excel and exchange excel data to entity by configuring xml and excel file faster,easier.You can check these unit test  to know how to use these API,you can find these test methods in the two classes TestExcelEntityExchange and TestExcelImporter
 
 你可以做什么？
+
 1，指定excel文件中需要读取的内容
 2，对读取到的数据进行校验，提供校验规则
 3，将读取到的excel数据转换为实体数据集
