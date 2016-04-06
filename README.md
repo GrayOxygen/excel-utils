@@ -15,7 +15,7 @@ The API is based on open-source the Java API for Microsoft Documents  - Apache P
 4，支持一层父子关系的数据转换，即excel中数据关系为父子与若干子表的关系时，可以转换为指定的数据集
 
 
-TODO documents  parent pom is to be uploaded 
+TODO documents  
 
 
 If you find some bugs or you have some advise,below is my contact details :
